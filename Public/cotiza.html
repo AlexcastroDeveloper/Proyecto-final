@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion</title>
+    <link rel="stylesheet" href="cotiza.css">   
+</head>
+<body>
+    
+  <section id="cotizacion" class="cotizacion">
+
+    <div class="container">
+      <h2>Solicita tu Cotización</h2>
+      <form id="form-cotizacion">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefono:</label>
+        <input type="number " id="phone" name="phone" required />
+
+        <label for="tipo">Tipo de servicio:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccione</option>
+          <option value="venta">Venta</option>
+          <option value="alquiler">Alquiler</option>
+        </select>
+
+        <label for="vehiculo">Modelo de interés:</label>
+        <input type="text" id="vehiculo" name="vehiculo" />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Especifica detalles como fechas de alquiler, presupuesto, etc."></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+      <div id="mensaje-exito" class="mensaje-exito oculto">¡Gracias! Nos pondremos en contacto pronto.</div>
+    </div>
+  </section>
+    
+</body>
+</html>

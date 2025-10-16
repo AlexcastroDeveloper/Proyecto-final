@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(./Soporte/Mcglaren.jpg);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+header{
+    background-color: #f4f4f4;
+    color: #080808;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;    
+    background-size: cover;
+    height: 100px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    margin-right: 10px;                             
+    gap: 20px;
+    padding: 10px;
+    color: #131111;
+}
+nav a{
+    color: #251e1e;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: ergb(33, 33, 33);
+}
+#sesion{
+    display: flex;
+    float: right  ;
+    margin-right: -30px  20px;
+    color: rgb(17, 14, 14);
+    border-radius: 5px;
+    gap: 20px;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.imagen{
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+img{
+    border-radius: 8px;
+    padding: 10p;
+}
+.btn{
+    display: inline-block;
+    background-color: #e21212;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+.landing{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.servicios, .vehiculos, .cotizacion {
+  padding: 30 0;
+  background-color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+.vehiculo {
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.vehiculo img {
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}

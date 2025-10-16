@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutosExpress - Venta y Alquiler de Vehículos</title>
+  <link rel="stylesheet" href="Frontend.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ColombianCars</h1>
+      <nav>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#vehiculos">Vehículos</a></li>
+          <li><a href="#cotizacion">Cotiza</a></li>
+          <li><a href="#contacto">contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="inicio">
+    <h2>Compra o alquila tu vehículo ideal</h2>
+      <img src="./Soporte/Estrenando_coche.jpg" alt="" id="estreno">
+  </div>
+
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Venta de Vehículos</h3>
+          <p>Vehículos nuevos y usados garantizados, al mejor precio del mercado.</p>
+        </div>
+        <div class="card">
+          <h3>Alquiler de Vehículos</h3>
+          <p>Autos, SUVs y vans disponibles por día, semana o mes.</p>
+        </div>
+        <div class="card">
+          <h3>Asesoría Personalizada</h3>
+          <p>Te ayudamos a elegir el vehículo que más se adapta a tus necesidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="container">
+      <p>Los mejores precios, variedad y atención personalizada.</p>
+      <a href="#cotizacion" class="btn">Solicitar Cotización</a>
+    </div>
+  </section>
+
+  <section id="vehiculos" class="vehiculos">
+    <div class="container">
+      <h2>Vehículos Disponibles</h2>
+      <div class="grid">
+        <div class="vehiculo">
+          <img src="./Soporte/Coche_negro.webp" alt="Vehículo 1">
+          <h4>SUV Toyota RAV4</h4>
+          <p>Alquiler desde $400.000/día</p>
+        </div>
+        <div class="vehiculo">
+          <img src="./Soporte/Hyundai.webp" alt="Vehículo 2">
+          <h4>Hyundai Elantra 2021</h4>
+          <p>Venta: $35,000.000</p>
+        </div>
+        <div class="vehiculo">
+          <img src="./Soporte/Kia.png" alt="Vehículo 3">
+          <h4>Kia Sportage 2020</h4>
+          <p>Alquiler desde $300.000/día</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotizacion" class="cotizacion">
+
+    <div class="container">
+      <h2>Solicita tu Cotización</h2>
+      <form id="form-cotizacion">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tipo">Tipo de servicio:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccione</option>
+          <option value="venta">Venta</option>
+          <option value="alquiler">Alquiler</option>
+        </select>
+
+        <label for="vehiculo">Modelo de interés:</label>
+        <input type="text" id="vehiculo" name="vehiculo" />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Especifica detalles como fechas de alquiler, presupuesto, etc."></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+      <div id="mensaje-exito" class="mensaje-exito oculto">¡Gracias! Nos pondremos en contacto pronto.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ColombianCars. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
